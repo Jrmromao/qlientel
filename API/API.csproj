@@ -33,6 +33,6 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DefineConstants>TRACE</DefineConstants>
-    <DocumentationFile>C:\Users\jfromao\projects\virtual-fono\API\API.xml</DocumentationFile>
+    <DocumentationFile>C:\Users\jfromao\projects\Qlientel\API\API.xml</DocumentationFile>
   </PropertyGroup>
 </Project>
