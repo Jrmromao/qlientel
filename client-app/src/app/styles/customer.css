@@ -1,0 +1,31 @@
+.customer-details-container{
+    height: 300pt;
+}
+.customer-details-container h1{
+    font-size: 2em;
+}
+
+.customer-details-container .header{
+    font-size: 1.5em;
+    padding: 10px;
+}
+.customer-details-container .description{
+    font-size: 1.1em;
+    padding: 10px;
+}
+
+ .customer-header-section{
+     height: 130px;
+     width: 100%;
+     background-color: #f3f3f4;
+     margin-top: -15px;
+ }
+ .customer-header-section h1{
+font-variant: small-caps;
+padding: 36px;
+font-size: 3em;
+}
+
+.customer-document-list{
+    padding-top: 10px !important;
+}

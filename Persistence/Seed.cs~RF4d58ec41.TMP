@@ -1,0 +1,54 @@
+﻿using Domain;
+using Microsoft.AspNetCore.Identity;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Persistence
+{
+    public class Seed
+    {
+
+        public static async Task SeedData(DataContext context, UserManager<AppUser> userManager)
+        {
+
+
+
+            if (!userManager.Users.Any())
+            {
+                var userList = new List<AppUser>
+                {
+
+                    new AppUser
+                    {
+                        DisplayName = "Carlos Romao",
+                        UserName = "CZSdebo",
+                        //Email = "carlos@mail.com",
+                        RegisterDate = DateTime.Now
+
+                    },
+                    new AppUser
+                    {
+                        DisplayName = "Joao Romao",
+                        UserName = "jrmromao",
+                        Email = "jrmromao@gmail.com",
+                        RegisterDate = DateTime.Now
+
+                     },
+
+                };
+
+                var role1 = await userManager.AddToRoleAsync(userList[0], "User");
+                var role2 = await userManager.AddToRoleAsync(userList[1], "Admin");
+
+
+                foreach (var u in userList)
+                {
+                    await userManager.CreateAsync(u, "Opel2010..");
+                }
+            }
+        }
+    }
+}

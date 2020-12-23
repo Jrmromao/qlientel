@@ -1,0 +1,269 @@
+.App {
+  text-align: center;
+}
+
+
+.is-readOnly-dropdown{
+   
+ background-color:#f3f3f3 !important ;
+}
+
+ 
+
+
+/* style for textInput */
+.is-readOnly input{
+  background-color: aliceblue !important;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+
+.modal-container{
+top: 100px ;
+}
+
+.not-found-page{
+  height: 100vh;
+}
+.not-found-page h1{
+  margin-top: 0px;
+font-size: 170px;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.four.wide.column.item
+{
+  font: 700em sans-serif;;
+}
+.beta{
+  display: inline;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#PatientsDetails{
+  padding-left: 100;
+}
+
+.ui.segment.active.tab
+{
+  border-width:0;
+}
+.masthead {
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(
+          135deg,
+          rgb(24, 42, 115) 0%,
+          rgb(33, 138, 174) 69%,
+          rgb(32, 167, 172) 89%
+  ) !important;
+  height: 100vh;
+}
+.masthead button{
+ 
+  left: auto;
+  right:auto;
+
+}
+.homePage{
+  height: 100% !important;
+  
+  
+ }
+
+ /* @media (max-width: 767px) { */
+  /* On small screens, the nav menu spans the full width of the screen. Leave a space for it. */
+  /* body {
+      padding-top: 50px;
+  } */
+/* } */
+ :root {
+  --top-menu-height: 3em;
+
+}  
+
+.top-menu {
+  height: var(--top-menu-height);  
+    /* position: fixed !important; */
+ /* width: 100% !important; */
+
+}
+.grid {
+  width: 100%;
+  display: grid;
+  grid: var(--top-menu-height) / 1fr;
+  grid-template-areas:  "menu"
+                        "maincontent";
+  min-height: 10vh;
+
+}   
+
+.margin-left{
+  margin-left: 14.2em !important;
+  
+}
+
+.menu {
+  grid-area: menu;
+  /* z-index: 100; */
+}
+
+.main-content {
+  grid-area: maincontent;
+  background-color: #F7F7F7;
+  
+}
+
+.parent {
+  /* display: inline-flex; */
+}
+
+.side {
+  transition: width 0.3s;
+  width: 14em !important;
+  overflow: hidden;
+  /* padding-top: var(--top-menu-height); */
+  z-index: 99;
+  background-color: #222222 !important;
+}
+
+.small-side {
+  width: 4em !important;
+  flex-basis: 4em;
+}
+
+.content {
+  position: absolute;
+  /* right: 0; */
+  transition: all 0.3s;
+  padding:0.5em;
+  margin-left: 5px;
+  width: calc(100% - 14.2em);
+
+}
+
+.small-content {
+  /* padding: 10px; */
+  width: calc(100% - 4em);
+}
+
+.logo-space-menu-item {
+  width: 14em;
+  background-color: rgb(94, 25, 25)!important;
+  border-right: #fff;
+}
+
+.display-inline {
+  display: inline-flex;
+  align-items: center;
+
+}
+
+.logo-space {
+  font-family: "Roboto Light", serif;
+  font-size: 24px;
+  margin: 0 auto;
+
+}
+
+.logo-space img, .display-inline img {
+  margin-right: 8px;
+}
+
+.no-border::before {
+  display: none;
+}
+.top-menu i.icon
+{
+  margin: 0 !important;
+}
+
+
+.drop-left-padding{
+  padding-left: 0 !important;
+}
+
+.label-on-corner {
+  top: 0.8em !important;
+  left: 78% !important;
+}
+
+/*
+.ui.teal.fluid.inverted.pointing.vertical.menu
+{
+  height: 100vh;
+  width: 150em;
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+
+.text{
+  font-size: 15px;
+  font-weight: bolder;
+
+}
+
+.ui.active.visible.top.left.pointing.dropdown
+{
+  font-size: 15px;
+  font-weight: bolder;
+
+}
+ 
+
+.masthead .ui.menu .ui.button,
+.ui.menu a.ui.inverted.button {
+  margin-left: 0.5em;
+}
+
+.masthead h1.ui.header {
+  font-size: 4em;
+  font-weight: normal;
+}
+.masthead h2 {
+  font-size: 1.7em;
+  font-weight: normal;
+}
+
+.inLineTextBox{
+
+  display: inline;
+}
+
+
+  */
+
+ 
+
+ 

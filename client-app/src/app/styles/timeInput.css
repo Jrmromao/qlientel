@@ -1,0 +1,27 @@
+/* input[type="time"]::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+input[type="time"] {
+  text-align: center !important;
+  font-weight: bolder !important;
+ 
+}
+
+input[type="time"]:hover {
+  border: 1.2px rgb(122, 122, 122) solid !important;
+} */
+
+
+.time-sheet-table th{
+  font-size: 13px;
+}
+.time-sheet-table input{
+ font-size: 13px !important;
+
+}
+.time-sheet-table {
+ size: 90% !important;
+ 
+ }
+ 

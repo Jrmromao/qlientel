@@ -1,0 +1,64 @@
+.ui.column.grid > [class*="four wide"].column,
+.ui.grid > .column.row > [class*="four wide"].column,
+.ui.grid > .row > [class*="four wide"].column,
+.ui.grid > [class*="four wide"].column {
+  width: 18% !important;
+}
+ 
+.ui.teal.fluid.inverted.pointing.vertical.menu {
+  height: 100%;
+  width: 17% !important;
+  font-size: 16px;
+  font-weight: bolder;
+
+
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  overflow-x: hidden; /* Disable horizontal scroll */
+
+}
+
+.ui.active.visible.top.left.pointing.dropdown {
+  font-size: 15px;
+  font-weight: bolder;
+}
+.stretched.twelve.wide.column{
+
+    width: 81%!important;
+    height: 100vh;
+}
+
+.company-data-container .content{
+top: 28%;
+}
+
+.my-activity-Feed-container .content{
+ left: 50px;
+}
+
+.company-actions-btn-group  a{
+  margin-top: 5px !important;
+ 
+  text-align: center;
+  color: bisque;
+}
+
+.dashboard-chart-segment{
+ 
+  height: 260px !important;
+}
+.recent-activity-segment{
+ 
+  height: 569px !important;
+}
+.recent-activity-segment .content{
+ 
+  margin-left: 50px !important;
+  margin-top: -3PX !important;
+  padding-bottom: 0px !important;
+}
+
+
+
+
+ 
