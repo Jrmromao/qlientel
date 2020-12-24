@@ -39,4 +39,4 @@ steps:
     SearchPattern: '**\bin\**\*.pdb'
   continueOnError: true
 
-
+- task: PublishBuildArtifacts@1
