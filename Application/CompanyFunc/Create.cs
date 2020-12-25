@@ -127,20 +127,20 @@ namespace Application.CompanyFunc
                 };
 
                 var result = await _userManager.CreateAsync(company.Office.First().Departments.First().Employees.First().AppUser, request.Password);
-                var companyId = _context.Company.Add(company);
-                var containerName = request.CompanyName + company.Id.ToString();
+            //    var companyId = _context.Company.Add(company);
+              //  var containerName = request.CompanyName + company.Id.ToString();
 
-                var container = Azure.Create.CreateCompanyContainerAsync(containerName.ToLower());
+             //   var container = Azure.Create.CreateCompanyContainerAsync(containerName.ToLower());
 
-                if (container.Exception == null)
-                {
+                //if (container.Exception == null)
+                //{      }
                     if (result.Succeeded)
                     {
                         var role = await _userManager.AddToRoleAsync(company.Office.First().Departments.First().Employees.First().AppUser, "Admin");
                         await _context.SaveChangesAsync();
                         return Unit.Value;
                     }
-                }
+          
                 else
                 {
                     DbContextExtensions.Reset(_context);
