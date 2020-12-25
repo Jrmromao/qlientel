@@ -39,8 +39,10 @@ client-app/src/test docs/doc (3).pdf
 
 client-app/src/test docs/doc (2).pdf
 
-API/wwwroot/
+ 
 
 API/publish/
 
 client-app/storybook-static/
+
+API/package-lock.json
