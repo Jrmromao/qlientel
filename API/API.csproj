@@ -30,7 +30,4 @@
     <DefineConstants>TRACE</DefineConstants>
     <DocumentationFile>C:\Users\jfromao\projects\Qlientel\API\API.xml</DocumentationFile>
   </PropertyGroup>
-  <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
-    <Exec Command="npm run-script build ..\client-app" />
-  </Target>
 </Project>
