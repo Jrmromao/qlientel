@@ -39,7 +39,7 @@ const LoginForm = () => {
             name="email"
             component={TextInput}
             placeholder="Email"
-            defaultValue="julios@ms.com"
+            defaultValue="admin@ms.com"
           />
           <Field
             name="password"

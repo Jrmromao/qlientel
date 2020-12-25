@@ -21,7 +21,10 @@ import {
 import { ILeaves, ILeavesRequest } from "../models/employeeModels/leaves";
 import { ICustomer } from "../models/customerModels/customer";
 // default
-axios.defaults.baseURL = "http://localhost:5000/api";
+axios.defaults.baseURL = process.env.REACT_APP_API_URL;
+
+
+
 axios.interceptors.request.use(
   (config) => {
     const token = window.localStorage.getItem("jwt");

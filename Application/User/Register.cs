@@ -75,7 +75,6 @@ namespace Application.User
                 {
                     Customers = new List<Customer>() { },
                     Name = request.CompanyName,
-
                     Office = new List<Office> {
                         new Office {
                             IsMainHQ = true,
@@ -101,9 +100,9 @@ namespace Application.User
 
                 _context.Company.Add(company);
 
-                var result = await _context.SaveChangesAsync();
-                // var result = await _userManager.CreateAsync(company.Office.First().Departments.First().Employees.First().AppUser, request.Password);
-                if (result > 0)
+                //var result = await _context.SaveChangesAsync();
+             var result = await _userManager.CreateAsync(company.Office.First().Departments.First().Employees.First().AppUser, request.Password);
+                if (result.Succeeded)
                 {
                     var role = await _userManager.AddToRoleAsync(company.Office.First().Departments.First().Employees.First().AppUser, "Manager");
                     if (role.Succeeded)

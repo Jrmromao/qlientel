@@ -80,15 +80,15 @@ namespace Application.User
                     {
                         Username = user.UserName,
                         Token = _jwtGenerator.CreateToken(user),
-                        DisplayName = user.DisplayName,
+                        DisplayName = user.DisplayName != null ? user.DisplayName : "",
                         Email = user.Email,
                         Role = _role,
                         Id = user.Id.ToString(),
-                        DepartmentId = user.EmployeeDetails.DepartmentId.ToString(),
-                        EmployeeId = user.EmployeeDetailsId.ToString(),
-                        CompanyId = user.EmployeeDetails.Department.Office.CompanyId,
-                        company = user.EmployeeDetails.Department.Office.Company.Name,
-                        Department = user.EmployeeDetails.Department.Name
+                        //DepartmentId = user.EmployeeDetails.DepartmentId.ToString(),
+                        //EmployeeId = user.EmployeeDetailsId.ToString(),
+                        //CompanyId = user.EmployeeDetails.Department.Office.CompanyId,
+                        //company = user.EmployeeDetails.Department.Office.Company.Name,
+                        //Department = user.EmployeeDetails.Department.Name
 
                     };
                 }

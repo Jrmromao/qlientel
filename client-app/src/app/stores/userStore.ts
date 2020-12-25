@@ -20,20 +20,17 @@ export default class UserStore {
 
   @action Login = async (values: IUserFormValues) => {
     try {
-      const user = await agents.user.login(values);
-      runInAction(() => {
-        this.user = user;
-      });
-      console.log("user after login: ", this.user);
+          const user = await agents.user.login(values);
+          if (user) {
+            runInAction(() => {
+              this.user = user;
+            });
 
-      this.rootStore.commonStore.setToken(user.token);
-      this.rootStore.modalStore.closeModal();
-
-
- 
-        history.push(`/${this.user?.role[0].toLowerCase()}/dashboard/`);
-
-    } catch (error) {
+            this.rootStore.commonStore.setToken(user.token);
+            this.rootStore.modalStore.closeModal();
+            history.push(`/${this.user?.role[0].toLowerCase()}/dashboard/`);
+          }
+        } catch (error) {
       throw error;
     }
   };
