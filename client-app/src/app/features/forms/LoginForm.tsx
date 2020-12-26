@@ -39,14 +39,14 @@ const LoginForm = () => {
             name="email"
             component={TextInput}
             placeholder="Email"
-            defaultValue="admin@ms.com"
+           
           />
           <Field
             name="password"
             component={TextInput}
             placeholder="Password"
             type="password"
-            defaultValue="Opel2010.."
+            
           />
           {submitError && !dirtySinceLastSubmit && (
             <ErrorMessage
