@@ -16,7 +16,7 @@ const Home = () => {
     <Segment inverted textAlign="center" vertical className="masthead">
       <Container text>
         <Header as="h1" inverted>
-          Qlientel fixed the error in the release
+          Qlientel beti e linda
         </Header>
 
         {isLoggedIn && user && token ? (
