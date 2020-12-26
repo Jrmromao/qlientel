@@ -109,6 +109,7 @@ font-size: 170px;
 /* } */
  :root {
   --top-menu-height: 3em;
+  background-color: teal;
 
 }  
 

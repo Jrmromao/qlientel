@@ -11,8 +11,8 @@ const TopMenu: React.FC<IProps> = () => {
   const { user, logout } = rootStore.userStore;
 
   return (
-    <Menu className="top-menu">
-      <Menu.Item className="no-border" onClick={() => {}}>
+    <Menu className="top-menu" color='teal'>
+      <Menu.Item className="no-border" color='teal' onClick={() => {}}>
         <Icon name="bars" />
       </Menu.Item>
 
