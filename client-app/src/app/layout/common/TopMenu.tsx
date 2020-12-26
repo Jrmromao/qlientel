@@ -11,10 +11,10 @@ const TopMenu: React.FC<IProps> = () => {
   const { user, logout } = rootStore.userStore;
 
   return (
-    <Menu className="top-menu" color='teal'>
-      <Menu.Item className="no-border" color='teal' onClick={() => {}}>
+    <Menu className="top-menu" color='teal' inverted>
+      {/* <Menu.Item className="no-border" onClick={() => {}}>
         <Icon name="bars" />
-      </Menu.Item>
+      </Menu.Item> */}
 
       <Menu.Menu position="right">
         <Menu.Item className="no-border" position="right">
@@ -30,6 +30,10 @@ const TopMenu: React.FC<IProps> = () => {
             1
           </Label>
         </Menu.Item>
+
+
+
+
         {user && (
           <Menu.Item position="right">
             <Image
@@ -52,6 +56,9 @@ const TopMenu: React.FC<IProps> = () => {
           </Menu.Item>
         )}
       </Menu.Menu>
+    
+    
+    
     </Menu>
   );
 };

@@ -31,7 +31,7 @@ API/data/quickstart93f4d05e-2a70-4aca-b45e-9862b6da00ea.txt
 
 API/data/quickstarte3adbf58-45bf-4337-9395-48dba92fabf8.txt
 
-API/data/quickstartec4755eb-d9ac-4f34-b69e-c7feec6ebed8.txt
+API/data/*
 
 debug.log
 
@@ -46,3 +46,7 @@ API/publish/
 client-app/storybook-static/
 
 API/package-lock.json
+
+API/wwwroot/**
+
+API/wwwroot/
