@@ -70,9 +70,6 @@ font-size: 170px;
   }
 }
 
-#PatientsDetails{
-  padding-left: 100;
-}
 
 .ui.segment.active.tab
 {
@@ -109,7 +106,6 @@ font-size: 170px;
 /* } */
  :root {
   --top-menu-height: 3em;
-  background-color: teal;
 
 }  
 
@@ -120,19 +116,22 @@ font-size: 170px;
 
 }
 .grid {
-  width: 100%;
-  display: grid;
-  grid: var(--top-menu-height) / 1fr;
+  /* width: 100%; */
+
+  padding-left: 1.5em !important;
+  padding-right: 1.5em !important;
+  display: grid; 
+ grid: var(--top-menu-height) / 1fr;
   grid-template-areas:  "menu"
                         "maincontent";
   min-height: 10vh;
 
 }   
 
-.margin-left{
+/* .margin-left{
   margin-left: 14.2em !important;
   
-}
+} */
 
 .menu {
   grid-area: menu;
@@ -163,7 +162,7 @@ font-size: 170px;
   flex-basis: 4em;
 }
 
-.content {
+.content{
   position: absolute;
   /* right: 0; */
   transition: all 0.3s;

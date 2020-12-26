@@ -11,7 +11,9 @@ const AdminLayout: React.FC<IProps> = ({ children }) => {
     <div className='margin-left'>
       <TopMenu/>
       <div className="main-content">
-        <SideMenu>{children}</SideMenu>
+        {/* <SideMenu>
+          </SideMenu> */}
+          {children}
       </div>
     </div>
   );
