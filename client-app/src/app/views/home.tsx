@@ -16,7 +16,7 @@ const Home = () => {
     <Segment inverted textAlign="center" vertical className="masthead">
       <Container text>
         <Header as="h1" inverted>
-          Qlientel TEST new 
+          Qlientel from pipeline release
         </Header>
 
         {isLoggedIn && user && token ? (

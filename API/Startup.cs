@@ -61,11 +61,14 @@ namespace API
                 options.IncludeXmlComments(xmlPath);
                 options.CustomSchemaIds(type => type.ToString());
             });
+
+
             // In production, the React files will be served from this directory
-            services.AddSpaStaticFiles(configuration =>
-            {
-                configuration.RootPath = "../client-app/build";
-            });
+            //services.AddSpaStaticFiles(configuration =>
+            //{
+            //    configuration.RootPath = "../client-app/build";
+            //});
+
             services.AddCors(opt =>
             {
                 opt.AddPolicy("CorsPolicy", policy =>
@@ -199,15 +202,15 @@ namespace API
                     endpoints.MapFallbackToController("Index","FallBack");
                 });
 
-            app.UseSpa(spa =>
-            {
-                spa.Options.SourcePath = "../client-app";
+            //app.UseSpa(spa =>
+            //{
+            //    spa.Options.SourcePath = "../client-app";
 
-                if (env.IsDevelopment())
-                {
-                    spa.UseReactDevelopmentServer(npmScript: "start");
-                }
-            });
+            //    if (env.IsDevelopment())
+            //    {
+            //        spa.UseReactDevelopmentServer(npmScript: "start");
+            //    }
+            //});
         }
     }
 }
